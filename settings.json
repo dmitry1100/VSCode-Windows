@@ -6,7 +6,7 @@
 	"editor.fontFamily": "'Fira Code', Consolas, Menlo, Monaco, 'Courier New', monospace",
 
 	// Controls the font size in pixels.
-	"editor.fontSize": 12,
+	"editor.fontSize": 14,
 
 	// Enables font ligatures
 	"editor.fontLigatures": true,
