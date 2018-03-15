@@ -1,0 +1,103 @@
+// Place your settings in this file to overwrite the default settings
+{
+// Editor
+
+	// Controls the font family.
+	"editor.fontFamily": "'Fira Code', Consolas, Menlo, Monaco, 'Courier New', monospace",
+
+	// Controls the font size in pixels.
+	"editor.fontSize": 12,
+
+	// Enables font ligatures
+	"editor.fontLigatures": true,
+
+	// Columns at which to show vertical rulers
+	"editor.rulers": [78, 124],
+
+	// The number of spaces a tab is equal to.
+	//"editor.tabSize": 2,
+	"editor.tabSize": 4,
+
+	// Insert spaces when pressing Tab.
+	//"editor.insertSpaces": false,
+	"editor.insertSpaces": true,
+
+	// When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
+	"editor.detectIndentation": true,
+
+	// Controls if the minimap is shown
+	"editor.minimap.enabled": true,
+
+	// Render the actual characters on a line (as opposed to color blocks)
+	"editor.minimap.renderCharacters": false,
+
+	// Limit the width of the minimap to render at most a certain number of columns
+	"editor.minimap.maxColumn": 100,
+
+	// Controls whether the editor should render whitespace characters
+	"editor.renderWhitespace": "all",
+
+	// Controls whether the editor should render control characters
+	"editor.renderControlCharacters": true,
+
+	// Controls whether the editor should render indent guides
+	"editor.renderIndentGuides": true,
+
+	// Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
+	"editor.wordWrap": "on",
+
+// Workbench
+
+	"workbench.iconTheme": "vscode-great-icons",
+
+// Window
+
+	// Controls if files should open in a new window.
+	// - default: files will open in the window with the files' folder open or the last active window unless opened via the dock or from finder (macOS only)
+	// - on: files will open in a new window
+	// - off: files will open in the window with the files' folder open or the last active window
+	// Note that there can still be cases where this setting is ignored (e.g. when using the -new-window or -reuse-window command line option).
+	"window.openFilesInNewWindow": "off",
+
+	// Controls if a window should restore to full screen mode if it was exited in full screen mode.
+	//"window.restoreFullscreen": true,
+
+	"window.zoomLevel": 0,
+
+// Files
+
+	// When enabled, will trim trailing whitespace when you save a file.
+	"files.trimTrailingWhitespace": true,
+
+// C/C++ Configuration
+
+	// Controls the IntelliSense provider. "Tag Parser" provides "fuzzy" results that are not context-aware. "Default" provides context-aware results and is in preview mode - member list, hover tooltips, and error squiggles are currently implemented. Features not yet implemented in the new default engine will use the tag parser engine instead.
+	"C_Cpp.intelliSenseEngine": "Default",
+
+// C# configuration
+
+	// Suppress the warning that the .NET CLI is not on the path.
+	"csharp.suppressDotnetInstallWarning": true,
+
+	// Launch OmniSharp with Mono.
+	"omnisharp.useMono": false,
+
+// C# XML Documentation Comments configuration
+
+	// Press the Enter key to activate a command.
+	"docomment.activateOnEnter": false,
+
+// npm-intellisense
+
+	// Scans devDependencies as well
+	"npm-intellisense.scanDevDependencies": true,
+
+// Git
+
+	"git.enableSmartCommit": true,
+	"git.confirmSync": false,
+
+// CMake configuration
+
+	//"cmake.cmakePath": "/usr/local/bin/cmake"
+}

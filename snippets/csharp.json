@@ -1,0 +1,135 @@
+{
+	"Unity3D Property Drawer": {
+		"prefix": "upropertydrawer",
+		"body": [
+			"[CustomPropertyDrawer( typeof( ${1:TypeToDraw} ) )]",
+			"public class ${1:TypeToDraw}Drawer : PropertyDrawer",
+			"{",
+			"\tpublic override void OnGUI ( Rect position, SerializedProperty property, GUIContent label )",
+			"\t{",
+			"\t\tlabel = EditorGUI.BeginProperty( position, label, property );",
+			"",
+			"\t\tvar oldIndentLevel = EditorGUI.indentLevel;",
+			"",
+			"\t\tvar indentPosition = EditorGUI.IndentedRect( position );",
+			"\t\tvar indent = indentPosition.x - position.x;",
+			"\t\tvar rc = new Rect( indentPosition.x, indentPosition.y,",
+			"\t\t\tEditorGUIUtility.labelWidth - indent, EditorGUIUtility.singleLineHeight );",
+			"",
+			"\t\t$0EditorGUI.PropertyField( position, property, label, true );",
+			"",
+			"\t\tEditorGUI.indentLevel = oldIndentLevel;",
+			"",
+			"\t\tEditorGUI.EndProperty();",
+			"\t}",
+			"",
+			"\tpublic override float GetPropertyHeight ( SerializedProperty property, GUIContent label )",
+			"\t{",
+			"\t\treturn EditorGUI.GetPropertyHeight( property, label, true );",
+			"\t}",
+			"}"
+		]
+	},
+	"Unity3D Custom Editor": {
+		"prefix": "ueditor",
+		"body": [
+			"[CanEditMultipleObjects]",
+			"[CustomEditor( typeof( ${1:Type} ) )]",
+			"public class ${1:Type}Editor :",
+			"#if REORDERABLE_ARRAY",
+			"\tReorderableArrayEditor",
+			"#else",
+			"\tEditor",
+			"#endif",
+			"{",
+			"\tprivate SerializedProperty _someSerializableField;",
+			"",
+			"\tprivate void OnEnable ()",
+			"\t{",
+			"\t\t_someSerializableField = serializedObject.FindProperty( \"_someSerializableField\" );",
+			"\t}",
+			"",
+			"\tpublic override void OnInspectorGUI ()",
+			"\t{",
+			"\t\tserializedObject.Update();",
+			"",
+			"\t\t$0DrawDefaultInspector();",
+			"",
+			"\t\tserializedObject.ApplyModifiedProperties();",
+			"\t}",
+			"}"
+		]
+	},
+	"Unity3D Editor Window": {
+		"prefix": "uwindow",
+		"body": [
+			"public class ${1:Type} : EditorWindow",
+			"{",
+			"\t[MenuItem( \"Window/Fiftytwo/${2:Title}\" )]",
+			"\tprivate static void ShowWindowMenuItem ()",
+			"\t{",
+			"\t\tvar window = GetWindow<${1:Type}>( false );",
+			"\t\twindow.Show();",
+			"\t}",
+			"",
+			"\tprivate void OnEnable ()",
+			"\t{",
+			"\t\ttitleContent = new GUIContent( \"${2:Title}\" );",
+			"\t}",
+			"",
+			"\tprivate void OnDisable ()",
+			"\t{",
+			"\t}",
+			"",
+			"\tprivate void OnGUI ()",
+			"\t{",
+			"\t\t$0GUILayout.Label( \"${2:Title}\" );",
+			"\t}",
+			"}"
+		]
+	},
+	"Unity3D Scenes Loop": {
+		"prefix": "uscenesloop",
+		"body": [
+			"for( int i = 0, count = SceneManager.sceneCount; i < count; ++i )",
+			"{",
+			"\tvar scene = SceneManager.GetSceneAt( i );",
+			"\tif( !scene.IsValid() )",
+			"\t\tcontinue;",
+			"}"
+		]
+	},
+	"Unity3D Root Game Objects Loop": {
+		"prefix": "urootgosloop",
+		"body": [
+			"List<GameObject> rootGOs = new List<GameObject>();",
+			"for( int sceneIdx = 0, sceneCount = SceneManager.sceneCount; sceneIdx < sceneCount; ++sceneIdx )",
+			"{",
+			"\tvar scene = SceneManager.GetSceneAt( sceneIdx );",
+			"\tif( !scene.IsValid() )",
+			"\t\tcontinue;",
+			"",
+			"\tscene.GetRootGameObjects( rootGOs );",
+			"\tfor( int goIdx = 0, gosCount = rootGOs.Count; goIdx < gosCount; ++goIdx )",
+			"\t{",
+			"\t\t$0",
+			"\t}",
+			"}"
+		]
+	},
+	"Unity3D Process Transform Recursive": {
+		"prefix": "utransformrecursive",
+		"body": [
+			"public static void ${1:MethodName}Recursive ( Transform t )",
+			"{",
+			"\t$0",
+			"",
+			"\tfor( int childIdx = 0, childCount = t.childCount; childIdx < childCount; ++childIdx )",
+			"\t{",
+			"\t\tvar child = t.GetChild( childIdx );",
+			"\t\t${1:MethodName}Recursive( child );",
+			"\t}",
+			"}"
+		]
+	}
+}
