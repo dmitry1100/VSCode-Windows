@@ -97,6 +97,10 @@
 	"git.enableSmartCommit": true,
 	"git.confirmSync": false,
 	"git.autofetch": true,
+	"vsicons.dontShowNewVersionMessage": true,
+	"gitlens.advanced.messages": {
+		"suppressShowKeyBindingsNotice": true
+	},
 
 // CMake configuration
 
