@@ -35,12 +35,7 @@
 		"body": [
 			"[CanEditMultipleObjects]",
 			"[CustomEditor( typeof( ${1:Type} ) )]",
-			"public class ${1:Type}Editor :",
-			"#if REORDERABLE_ARRAY",
-			"\tReorderableArrayEditor",
-			"#else",
-			"\tEditor",
-			"#endif",
+			"public class ${1:Type}Editor : Editor",
 			"{",
 			"\tprivate SerializedProperty _someSerializableField;",
 			"",
