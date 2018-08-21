@@ -52,16 +52,14 @@
 
 // Window
 
-	// Controls if files should open in a new window.
-	// - default: files will open in the window with the files' folder open or the last active window unless opened via the dock or from finder (macOS only)
-	// - on: files will open in a new window
-	// - off: files will open in the window with the files' folder open or the last active window
+	// Controls whether folders should open in a new window or replace the last active window.
 	// Note that there can still be cases where this setting is ignored (e.g. when using the -new-window or -reuse-window command line option).
-	"window.openFilesInNewWindow": "off",
+	//  - on: Folders will open in a new window.
+	//  - off: Folders will replace the last active window.
+	//  - default: Folders will open in a new window unless a folder is picked from within the application (e.g. via the File menu).
+	"window.openFoldersInNewWindow": "off",
 
-	// Controls if a window should restore to full screen mode if it was exited in full screen mode.
-	//"window.restoreFullscreen": true,
-
+	// Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
 	"window.zoomLevel": 0,
 
 // Files
@@ -73,14 +71,6 @@
 
 	// Controls the IntelliSense provider. "Tag Parser" provides "fuzzy" results that are not context-aware. "Default" provides context-aware results and is in preview mode - member list, hover tooltips, and error squiggles are currently implemented. Features not yet implemented in the new default engine will use the tag parser engine instead.
 	"C_Cpp.intelliSenseEngine": "Default",
-
-// C# configuration
-
-	// Suppress the warning that the .NET CLI is not on the path.
-	"csharp.suppressDotnetInstallWarning": true,
-
-	// Launch OmniSharp with Mono.
-	"omnisharp.useMono": false,
 
 // C# XML Documentation Comments configuration
 
