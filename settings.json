@@ -48,7 +48,6 @@
 
 // Workbench
 
-	"workbench.iconTheme": "vscode-icons",
 
 // Window
 
@@ -87,7 +86,8 @@
 	"git.enableSmartCommit": true,
 	"git.confirmSync": false,
 	"git.autofetch": true,
-	"vsicons.dontShowNewVersionMessage": true,
+	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+	"editor.acceptSuggestionOnCommitCharacter": false,
 
 // CMake configuration
 
