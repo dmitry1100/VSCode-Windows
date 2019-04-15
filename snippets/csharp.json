@@ -101,7 +101,7 @@
 			"\t\t\t$0DrawDefaultInspector();",
 			"",
 			"\t\t\t//if( EditorGUI.EndChangeCheck() )",
-			"\t\t\t//\tserializedObject.ApplyModifiedProperties();",
+			"\t\t\t\t//serializedObject.ApplyModifiedProperties();",
 			"\t\t}",
 			"\t}",
 			"}",
