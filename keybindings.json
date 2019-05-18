@@ -1,6 +1,6 @@
 // Place your key bindings in this file to overwrite the defaults
 [{
-	"key": "alt+space",
+	"key": "ctrl+shif+alt+space",
 	"command": "editor.action.triggerSuggest",
 	"when": "editorTextFocus"
 }, {
@@ -16,5 +16,10 @@
 {
 	"key": "shift+cmd+u",
 	"command": "editor.action.transformToUppercase"
+},
+{
+	"key": "ctrl+alt+s",
+	"command": "workbench.action.tasks.runTask",
+	"args": "Sync with Unity Editor"
 }
 ]
