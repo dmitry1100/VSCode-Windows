@@ -88,7 +88,8 @@
 	"git.autofetch": true,
 	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
 	"editor.acceptSuggestionOnCommitCharacter": false,
-	"workbench.colorTheme": "Xcode Partial (Light)",
+	"workbench.colorTheme": "Night Owl (No Italics)",
+	"workbench.iconTheme": "vscode-icons",
 
 // CMake configuration
 
