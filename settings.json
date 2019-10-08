@@ -2,6 +2,8 @@
 {
 // Editor
 
+	"editor.acceptSuggestionOnCommitCharacter": false,
+
 	// Controls the font family.
 	"editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace",
 
@@ -46,8 +48,14 @@
 	// Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
 	"editor.wordWrap": "on",
 
-// Workbench
+// Files
 
+	// When enabled, will trim trailing whitespace when you save a file.
+	"files.trimTrailingWhitespace": false,
+
+// Terminal
+
+	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
 
 // Window
 
@@ -61,10 +69,10 @@
 	// Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
 	"window.zoomLevel": 0,
 
-// Files
+// Workbench
 
-	// When enabled, will trim trailing whitespace when you save a file.
-	"files.trimTrailingWhitespace": false,
+	"workbench.colorTheme": "Night Owl+",
+	"workbench.iconTheme": "vscode-icons-mac",
 
 // C/C++ Configuration
 
@@ -86,10 +94,12 @@
 	"git.enableSmartCommit": true,
 	"git.confirmSync": false,
 	"git.autofetch": true,
-	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-	"editor.acceptSuggestionOnCommitCharacter": false,
-	"workbench.colorTheme": "Night Owl+ Dark",
-	"workbench.iconTheme": "vscode-icons-mac",
+
+// Git Project Manager
+
+	"gitProjectManager.baseProjectsFolders": [
+        "C:\\Users\\dmitry\\projects"
+    ]
 
 // CMake configuration
 

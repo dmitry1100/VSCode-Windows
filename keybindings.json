@@ -1,20 +1,19 @@
 // Place your key bindings in this file to overwrite the defaults
-[{
-	"key": "ctrl+shif+alt+space",
-	"command": "editor.action.triggerSuggest",
-	"when": "editorTextFocus"
-}, {
+[
+{
 	"key": "ctrl+alt+down",
 	"command": "workbench.action.compareEditor.nextChange"
-}, {
-	"key": "ctrl+alt+up",
-	"command": "workbench.action.compareEditor.previousChange"
-}, {
-	"key": "shift+alt+cmd+s",
-	"command": "workbench.action.git.sync"
 },
 {
-	"key": "shift+cmd+u",
+	"key": "ctrl+alt+up",
+	"command": "workbench.action.compareEditor.previousChange"
+},
+{
+	"key": "ctrl+shift+alt+s",
+	"command": "git.sync"
+},
+{
+	"key": "ctrl+shift+u",
 	"command": "editor.action.transformToUppercase"
 },
 {
