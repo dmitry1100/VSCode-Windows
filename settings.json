@@ -71,8 +71,8 @@
 
 // Workbench
 
-	"workbench.colorTheme": "Night Owl+",
-	"workbench.iconTheme": "vscode-icons-mac",
+	"workbench.colorTheme": "Night Owl (No Italics)",
+	"workbench.iconTheme": "material-icon-theme",
 
 // C/C++ Configuration
 
@@ -99,7 +99,7 @@
 
 	"gitProjectManager.baseProjectsFolders": [
         "C:\\Users\\dmitry\\projects"
-    ]
+	]
 
 // CMake configuration
 
