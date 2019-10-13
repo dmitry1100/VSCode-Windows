@@ -1,10 +1,9 @@
+code --install-extension abhiagr.logcat
 code --install-extension amlovey.shaderlabvscodefree
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension donjayamanne.githistory
-code --install-extension eamodio.gitlens
 code --install-extension emmanuelbeziat.vscode-great-icons
 code --install-extension felipecaputo.git-project-manager
-code --install-extension hoovercj.vscode-power-mode
 code --install-extension johnpapa.winteriscoming
 code --install-extension k--kato.docomment
 code --install-extension karyfoundation.theme-karyfoundation-themes
