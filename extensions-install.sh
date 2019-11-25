@@ -22,3 +22,4 @@ code --install-extension Tobiah.unity-tools
 code --install-extension uloco.theme-bluloco-dark
 code --install-extension uloco.theme-bluloco-light
 code --install-extension Unity.unity-debug
+code --install-extension zbecknell.t4-support
