@@ -71,7 +71,7 @@
 
 // Workbench
 
-	"workbench.colorTheme": "Night Owl (No Italics)",
+	"workbench.colorTheme": "Light+ Tweaked",
 	"workbench.iconTheme": "material-icon-theme",
 
 // C/C++ Configuration
@@ -99,7 +99,14 @@
 
 	"gitProjectManager.baseProjectsFolders": [
         "C:\\Users\\dmitry\\projects"
-	]
+	],
+	"extensions.autoUpdate": true,
+	"files.associations": {
+		"*.asset": "yaml",
+		"*.unity": "yaml",
+		"*.meta": "yaml",
+		"*.prefab": "yaml"
+	}
 
 // CMake configuration
 
