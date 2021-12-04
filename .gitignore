@@ -7,7 +7,8 @@
 [Ee]hthumbs.db
 [Tt]humbs.db
 
-workspaceStorage/
-globalStorage/
+/workspaceStorage/
+/globalStorage/
+/sync/
 vsicons.settings.json
 gpm-recentItems.json

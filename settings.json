@@ -2,16 +2,14 @@
 {
 // Editor
 
-	"editor.acceptSuggestionOnCommitCharacter": false,
-
 	// Controls the font family.
 	"editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace",
 
 	// Controls the font size in pixels.
-	"editor.fontSize": 14,
+	"editor.fontSize": 13,
 
 	// Enables font ligatures
-	"editor.fontLigatures": true,
+	"editor.fontLigatures": false,
 
 	// Columns at which to show vertical rulers
 	"editor.rulers": [78, 124],
@@ -48,36 +46,42 @@
 	// Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
 	"editor.wordWrap": "on",
 
-// Files
-
-	// When enabled, will trim trailing whitespace when you save a file.
-	"files.trimTrailingWhitespace": false,
-
-// Terminal
-
-	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+	"editor.acceptSuggestionOnCommitCharacter": false,
 
 // Window
 
-	// Controls whether folders should open in a new window or replace the last active window.
+	// Controls if files should open in a new window.
+	// - default: files will open in the window with the files' folder open or the last active window unless opened via the dock or from finder (macOS only)
+	// - on: files will open in a new window
+	// - off: files will open in the window with the files' folder open or the last active window
 	// Note that there can still be cases where this setting is ignored (e.g. when using the -new-window or -reuse-window command line option).
-	//  - on: Folders will open in a new window.
-	//  - off: Folders will replace the last active window.
-	//  - default: Folders will open in a new window unless a folder is picked from within the application (e.g. via the File menu).
+	"window.openFilesInNewWindow": "off",
+
 	"window.openFoldersInNewWindow": "off",
 
-	// Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
+// Files
+
+	// When enabled, will trim trailing whitespace when you save a file.
 	"window.zoomLevel": 0,
+	"files.trimTrailingWhitespace": false,
 
-// Workbench
-
-	"workbench.colorTheme": "Night Owl (No Italics)",
-	"workbench.iconTheme": "material-icon-theme",
+	"files.associations": {
+		"*.meta": "yaml",
+		"*.asset": "yaml",
+		"*.unity": "yaml",
+		"*.prefab": "yaml",
+		"*.plist": "xml"
+	},
 
 // C/C++ Configuration
 
 	// Controls the IntelliSense provider. "Tag Parser" provides "fuzzy" results that are not context-aware. "Default" provides context-aware results and is in preview mode - member list, hover tooltips, and error squiggles are currently implemented. Features not yet implemented in the new default engine will use the tag parser engine instead.
 	"C_Cpp.intelliSenseEngine": "Default",
+
+// C# configuration
+
+	// Suppress the warning that the .NET CLI is not on the path.
+	"csharp.suppressDotnetInstallWarning": true,
 
 // C# XML Documentation Comments configuration
 
@@ -93,22 +97,38 @@
 
 	"git.enableSmartCommit": true,
 	"git.confirmSync": false,
-	"git.autofetch": true,
-
-// Git Project Manager
-
-	"gitProjectManager.baseProjectsFolders": [
-        "C:\\Users\\dmitry\\projects"
-	],
-	"extensions.autoUpdate": true,
-	"files.associations": {
-		"*.asset": "yaml",
-		"*.unity": "yaml",
-		"*.meta": "yaml",
-		"*.prefab": "yaml"
-	}
 
 // CMake configuration
 
-	//"cmake.cmakePath": "/usr/local/bin/cmake"
+	"cmake.cmakePath": "/usr/local/bin/cmake",
+
+// Zen mode
+
+	"zenMode.centerLayout": false,
+
+// Explorer
+
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+
+// Terminal
+
+	"terminal.integrated.shell.osx": "/bin/zsh",
+
+// Telemetry
+
+	"telemetry.enableCrashReporter": false,
+	"telemetry.enableTelemetry": false,
+
+// Workbench
+
+	"workbench.colorTheme": "Night Owl (No Italics)",
+	"workbench.iconTheme": "vscode-great-icons",
+	"material-icon-theme.showWelcomeMessage": false,
+	"extensions.autoUpdate": false,
+	"extensions.ignoreRecommendations": true,
+	"explorer.compactFolders": false,
+	"omnisharp.useGlobalMono": "always",
+	"window.restoreWindows": "none",
+	"security.workspace.trust.untrustedFiles": "open",
 }
