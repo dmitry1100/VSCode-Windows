@@ -131,4 +131,6 @@
 	"omnisharp.useGlobalMono": "always",
 	"window.restoreWindows": "none",
 	"security.workspace.trust.untrustedFiles": "open",
+	"editor.unicodeHighlight.nonBasicASCII": false,
+	"files.defaultLanguage": "plaintext",
 }
