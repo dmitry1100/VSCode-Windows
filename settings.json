@@ -1,12 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-// Editor
-
-	// Controls the font family.
-	"editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace",
-
-	// Controls the font size in pixels.
-	"editor.fontSize": 13,
+	"editor.fontSize": 14,
 
 	// Enables font ligatures
 	"editor.fontLigatures": false,
@@ -40,9 +34,6 @@
 	// Controls whether the editor should render control characters
 	"editor.renderControlCharacters": true,
 
-	// Controls whether the editor should render indent guides
-	"editor.renderIndentGuides": true,
-
 	// Controls if lines should wrap. The lines will wrap at min(editor.wrappingColumn, viewportWidthInColumns).
 	"editor.wordWrap": "on",
 
@@ -58,10 +49,6 @@
 	"window.openFilesInNewWindow": "off",
 
 	"window.openFoldersInNewWindow": "off",
-
-// Files
-
-	// When enabled, will trim trailing whitespace when you save a file.
 	"window.zoomLevel": 0,
 	"files.trimTrailingWhitespace": false,
 
@@ -122,15 +109,18 @@
 
 // Workbench
 
-	"workbench.colorTheme": "Night Owl (No Italics)",
+	"workbench.colorTheme": "Light+ Tweaked",
 	"workbench.iconTheme": "vscode-great-icons",
 	"material-icon-theme.showWelcomeMessage": false,
-	"extensions.autoUpdate": false,
 	"extensions.ignoreRecommendations": true,
 	"explorer.compactFolders": false,
-	"omnisharp.useGlobalMono": "always",
 	"window.restoreWindows": "none",
 	"security.workspace.trust.untrustedFiles": "open",
 	"editor.unicodeHighlight.nonBasicASCII": false,
 	"files.defaultLanguage": "plaintext",
+	"editor.accessibilitySupport": "off",
+	"editor.guides.indentation": true,
+	"extensions.autoUpdate": false,
+	"editor.fontFamily": "Menlo, Consolas, Monaco, 'Courier New', monospace",
+	"omnisharp.useModernNet": false,
 }
