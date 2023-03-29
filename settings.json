@@ -87,7 +87,7 @@
 
 // CMake configuration
 
-	"cmake.cmakePath": "/usr/local/bin/cmake",
+	"cmake.cmakePath": "/usr/bin/cmake",
 
 // Zen mode
 
@@ -123,4 +123,6 @@
 	"extensions.autoUpdate": false,
 	"editor.fontFamily": "Menlo, Consolas, Monaco, 'Courier New', monospace",
 	"omnisharp.useModernNet": false,
+	"omnisharp.monoPath": "C:\\Program Files\\Mono",
+	"terminal.integrated.inheritEnv": false,
 }
